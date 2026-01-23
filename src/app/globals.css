@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Major+Mono+Display&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap'); */
 @import "tailwindcss";
 
-h1, h2, h3 {
-  font-family: 'Major Mono Display', monospace;
+/* Font utility classes */
+
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-zen {
+  font-family: var(--font-zen);
 }

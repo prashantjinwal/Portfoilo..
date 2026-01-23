@@ -1,14 +1,24 @@
 import "./globals.css";
 import ParticleNetwork from "@/components/ParticleNetwork";
-import { Major_Mono_Display, Inter } from 'next/font/google';
+import { Major_Mono_Display, Zen_Dots, Acme } from 'next/font/google';
 
-// Google Fonts setup
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+
+
 const mono = Major_Mono_Display({ subsets: ['latin'], weight: '400', variable: '--font-mono' });
+const zen = Zen_Dots({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-zen'
+});
+const arc = Acme({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-arc'
+});
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${mono.variable}`}>
+    <html lang="en" className={` ${mono.variable} ${zen.variable} ${arc.variable}`}>
       <body className="overflow-hidden">
         <ParticleNetwork />
         <main className="relative z-10">
