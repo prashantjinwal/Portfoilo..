@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const SKILLS = [
-  { name: "Excel", x: 20, y: 30, src: "/icons_stack/excel.svg" },
+  { name: "Excel", x: 20, y: 30, src: "/icons_stack/Excel.svg" },
   { name: "Power BI", x: 25, y: 45, src: "/icons_stack/Power_BI.svg" },
   { name: "SQL", x: 35, y: 40, src: "/icons_stack/Microsoft-SQL-Server.svg" },
 
