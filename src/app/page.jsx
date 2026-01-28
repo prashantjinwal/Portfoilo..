@@ -9,7 +9,6 @@ export default function Home() {
 
   return (
     <>
-      {/* NAVBAR ko ref pass hoga (layout me bhi kar sakta hai) */}
 
       <main
         ref={scrollRef}

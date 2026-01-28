@@ -27,12 +27,12 @@ export default function SkillScatterPlot() {
 
         
         <svg className="absolute inset-0 w-full h-full">
-          {/* X axis */}
+          
           <line x1="60" y1="360" x2="560" y2="360" stroke="#475569" />
-          {/* Y axis */}
+          
           <line x1="60" y1="360" x2="60" y2="40" stroke="#475569" />
 
-          {/* Grid */}
+          
           {[1,2,3,4].map(i => (
             <g key={i}>
               <line
@@ -63,7 +63,6 @@ export default function SkillScatterPlot() {
           Tools → Advanced Analytics
         </span> */}
 
-        {/* POINTS */}
         {SKILLS.map((skill, i) => {
           const left = 60 + (skill.x / 100) * 500;
           const top = 360 - (skill.y / 100) * 320;
@@ -86,7 +85,7 @@ export default function SkillScatterPlot() {
                 className="opacity-80 group-hover:opacity-100"
               />
 
-              {/* Tooltip */}
+              
               <div
                 className="
                   absolute left-1/2 -translate-x-1/2 -top-7

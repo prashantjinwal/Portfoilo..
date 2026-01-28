@@ -7,7 +7,7 @@ export default function Navbar({ scrollRef }) {
   const navLinks = ["Projects", "About", "Resume"];
   const [hidden, setHidden] = useState(false);
 
-  // ✅ container = actual hydrated ref
+ 
   const { scrollY } = useScroll({
     container: scrollRef,
   });
@@ -32,12 +32,12 @@ export default function Navbar({ scrollRef }) {
       transition={{ duration: 0.3, ease: "easeInOut" }}
       className="fixed top-0 left-0 w-full z-50 px-12 py-6 flex items-center justify-between "
     >
-      {/* LOGO */}
+      
       <div className="text-white text-xl tracking-widest font-zen">
         PRASHANT<span className="text-blue-500">...</span> &lt;/&gt;
       </div>
 
-      {/* LINKS */}
+      
       <div className="flex items-center gap-8 text-lg font-semibold text-gray-300">
         {navLinks.map((link, idx) => (
           <a key={idx} href={`#${link.toLowerCase()}`} className="relative group">

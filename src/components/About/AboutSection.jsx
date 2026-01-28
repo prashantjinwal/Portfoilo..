@@ -11,9 +11,9 @@ export default function AboutSection() {
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
-        {/* LEFT — HEADING + ABOUT CARD */}
+        
         <div>
-          {/* MAIN HEADING */}
+          
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ export default function AboutSection() {
             ABOUT
           </motion.h2>
 
-          {/* ABOUT CARD */}
+          
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export default function AboutSection() {
               max-w-xl
             "
           >
-            {/* GLOW BACKGROUND */}
+            
             <div
               className="
                 pointer-events-none
@@ -92,7 +92,7 @@ export default function AboutSection() {
                 how data is generated, stored, and consumed in production systems.
               </p>
 
-              {/* QUICK SKILLS */}
+             
               <ul className="text-slate-400 text-sm space-y-2 mb-6">
                 <li>• Data Cleaning & EDA (Pandas, NumPy)</li>
                 <li>• SQL Queries, Joins & Aggregations</li>
@@ -107,7 +107,7 @@ export default function AboutSection() {
           </motion.div>
         </div>
 
-        {/* RIGHT — TECH STACK */}
+        {/* RIGHT side ka TECH STACK */}
         <TechStack />
       </div>
     </section>
