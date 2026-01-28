@@ -10,7 +10,7 @@ const SKILLS = [
   { name: "Chatjs", x: 25, y: 80, src: "/icons_stack/Chart.svg" },
 
   { name: "Python", x: 43, y: 55, src: "/icons_stack/Python.svg" },
-  { name: "Pandas", x: 50, y: 75, src: "/icons_stack/Pandas.svg" },
+  { name: "Pandas", x: 90, y: 75, src: "/icons_stack/Pandas.svg" },
   { name: "NumPy", x: 60, y: 48, src: "/icons_stack/NumPy.svg" },
   { name: "Matplotlib", x: 62, y: 70, src: "/icons_stack/Matplotlib.svg" },
   { name: "Seaborn", x: 65, y: 38, src: "/icons_stack/seaborn.svg" },
