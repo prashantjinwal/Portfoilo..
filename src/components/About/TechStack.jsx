@@ -8,16 +8,16 @@ const SKILLS = [
   { name: "Power BI", x: 25, y: 45, src: "/icons_stack/Power_BI.svg" },
   { name: "SQL", x: 35, y: 40, src: "/icons_stack/Microsoft-SQL-Server.svg" },
 
-  { name: "Python", x: 43, y: 55, src: "/icons_stack/python.svg" },
-  { name: "Pandas", x: 50, y: 75, src: "/icons_stack/pandas.svg" },
-  { name: "NumPy", x: 60, y: 48, src: "/icons_stack/numpy.svg" },
-  { name: "Matplotlib", x: 62, y: 70, src: "/icons_stack/matplotlib.svg" },
+  { name: "Python", x: 43, y: 55, src: "/icons_stack/Python.svg" },
+  { name: "Pandas", x: 50, y: 75, src: "/icons_stack/Pandas.svg" },
+  { name: "NumPy", x: 60, y: 48, src: "/icons_stack/Numpy.svg" },
+  { name: "Matplotlib", x: 62, y: 70, src: "/icons_stack/Matplotlib.svg" },
   { name: "Seaborn", x: 65, y: 38, src: "/icons_stack/seaborn.svg" },
   { name: "Jupyter", x: 78, y: 62, src: "/icons_stack/jupyter.svg" },
 
-  { name: "React", x: 85, y: 65, src: "/icons_stack/react.svg" },
+  { name: "React", x: 85, y: 65, src: "/icons_stack/React.svg" },
   { name: "Node.js", x: 82, y: 48, src: "/icons_stack/Node.js.svg" },
-  { name: "FastAPI", x: 70, y: 72, src: "/icons_stack/fastapi.svg" },
+  { name: "FastAPI", x: 70, y: 72, src: "/icons_stack/Fastapi.svg" },
 ];
 
 export default function SkillScatterPlot() {
