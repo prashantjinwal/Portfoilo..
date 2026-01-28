@@ -12,3 +12,8 @@
 .font-zen {
   font-family: var(--font-zen);
 }
+
+html,body {
+  height: 100%;
+  overscroll-behavior: none;
+}

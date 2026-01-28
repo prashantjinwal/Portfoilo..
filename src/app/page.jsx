@@ -1,35 +1,28 @@
-import Navbar from "@/components/Navbar";
-import IDCardImage from "@/components/IDCardImage";
+"use client";
+
+import { useRef } from "react";
+import HeroSection from "@/components/hero/HeroSection";
+import AboutSection from "@/components/About/AboutSection";
 
 export default function Home() {
+  const scrollRef = useRef(null);
+
   return (
-    <section className="
-      relative
-      min-h-screen
-      bg-transparent
-      overflow-hidden
-      flex
-      items-center
-      justify-center
-      isolate
-    ">
+    <>
+      {/* NAVBAR ko ref pass hoga (layout me bhi kar sakta hai) */}
 
-      <Navbar />
-      <IDCardImage />
+      <main
+        ref={scrollRef}
+        className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth"
+      >
+        <section id="hero" className="h-screen snap-start">
+          <HeroSection />
+        </section>
 
-      {/* Big Background Name */}
-      <h1 className="text-[14vw] font-mono text-[#edf2f4] tracking-widest z-10">
-        PRASHANT
-      </h1>
-
-      {/* Bottom strip */}
-      <div className="absolute bottom-32 text-blue-400 text-sm tracking-wide z-10">
-        Python • SQL • Dashboards • React Js • Power BI
-      </div>
-
-      <div className="absolute bottom-12 text-xs opacity-60 z-10">
-        ↓ EXPLORE MORE
-      </div>
-    </section>
+        <section id="about" className="h-screen snap-start">
+          <AboutSection />
+        </section>
+      </main>
+    </>
   );
 }
