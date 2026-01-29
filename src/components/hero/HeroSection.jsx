@@ -28,10 +28,7 @@ export default function HeroSection() {
         PRASHANT
       </h1>
 
-      {/* Bottom tech strip */}
-      {/* <div className="absolute bottom-40 text-blue-400 text-sm tracking-wide z-10">
-        Python • SQL • Dashboards • React • Power BI
-      </div> */}
+      
 
       {/* Explore */}
       <div className="absolute bottom-5  text-2xl opacity-70 z-10 font-arc">
