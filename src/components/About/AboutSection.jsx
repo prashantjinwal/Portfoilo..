@@ -56,7 +56,7 @@ export default function AboutSection() {
               "
             />
 
-            {/* LEFT ACCENT BAR */}
+            
             <span
               className="
                 pointer-events-none
@@ -70,7 +70,7 @@ export default function AboutSection() {
               "
             />
 
-            {/* CONTENT */}
+           
             <div className="relative z-10">
               <h3 className="text-white text-xl font-semibold tracking-wide mb-4">
                 Data Analyst with an Engineering Edge

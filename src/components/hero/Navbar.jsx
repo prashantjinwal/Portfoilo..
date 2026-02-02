@@ -13,12 +13,12 @@ export default function Navbar() {
         transition={{ duration: 0.3 }}
         className="flex items-center justify-between w-full"
       >
-        {/* LOGO */}
+        
         <div className="text-white text-xl tracking-widest font-zen">
           PRASHANT<span className="text-blue-500">...</span> &lt;/&gt;
         </div>
 
-        {/* NAV LINKS */}
+        
         <div className="flex items-center gap-8 text-lg font-semibold text-gray-300">
           {navLinks.map((link) => (
             <a
