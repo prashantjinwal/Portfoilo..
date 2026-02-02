@@ -128,12 +128,7 @@ export default function ParticleNetwork() {
 
   return (
      <div
-      className="
-        fixed
-        inset-0
-        -z-10
-        pointer-events-none
-      "
+      className="absolute inset-0 -z-10 pointer-events-none"
     >
     <canvas
       ref={canvasRef}

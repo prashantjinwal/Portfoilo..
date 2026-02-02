@@ -32,7 +32,7 @@ export default function IDCardImage() {
         top-[-120px]
         left-1/2
         -translate-x-1/2
-        z-20
+        z-50
         w-[260px] sm:w-[300px] md:w-[360px] lg:w-[420px] xl:w-[480px]
       "
       style={{ perspective: "1400px" }}

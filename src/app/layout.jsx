@@ -1,5 +1,8 @@
 import "./globals.css";
 import { Major_Mono_Display, Zen_Dots, Acme } from "next/font/google";
+import Navbar from "@/components/hero/Navbar";
+
+
 
 const mono = Major_Mono_Display({
   subsets: ["latin"],
@@ -22,7 +25,9 @@ const arc = Acme({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${mono.variable} ${zen.variable} ${arc.variable}`}>
+
       <body className="bg-black text-white">
+        <Navbar />
         {children}
       </body>
     </html>

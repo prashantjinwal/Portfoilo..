@@ -1,0 +1,20 @@
+const SKILLS = [
+  { name: "Excel", x: 20, y: 30, src: "/icons_stack/Excel.svg" },
+  { name: "Power BI", x: 25, y: 45, src: "/icons_stack/Power_BI.svg" },
+  { name: "SQL", x: 35, y: 40, src: "/icons_stack/Microsoft-SQL-Server.svg" },
+  { name: "Chatjs", x: 25, y: 80, src: "/icons_stack/Chart.svg" },
+
+  { name: "Python", x: 43, y: 55, src: "/icons_stack/Python.svg" },
+  { name: "Pandas", x: 90, y: 75, src: "/icons_stack/Pandas.svg" },
+  { name: "NumPy", x: 60, y: 48, src: "/icons_stack/NumPy.svg" },
+  { name: "Matplotlib", x: 62, y: 70, src: "/icons_stack/Matplotlib.svg" },
+  { name: "Seaborn", x: 65, y: 38, src: "/icons_stack/seaborn.svg" },
+  { name: "Jupyter", x: 78, y: 62, src: "/icons_stack/Jupyter.svg" },
+  { name: "Github", x: 28, y: 68, src: "/icons_stack/GitHub.svg" },
+  { name: "Javascript", x: 48, y: 78, src: "/icons_stack/JavaScript.svg" },
+  { name: "Express", x: 88, y: 38, src: "/icons_stack/express.png" },
+
+  { name: "React", x: 85, y: 65, src: "/icons_stack/React.svg" },
+  { name: "Node.js", x: 82, y: 48, src: "/icons_stack/Node.js.svg" },
+  { name: "FastAPI", x: 70, y: 72, src: "/icons_stack/FastAPI.svg" },
+];

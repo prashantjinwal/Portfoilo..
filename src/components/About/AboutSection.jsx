@@ -5,10 +5,7 @@ import TechStack from "./TechStack";
 
 export default function AboutSection() {
   return (
-    <section
-      id="about"
-      className="relative w-full   bg-black py-18 px-6"
-    >
+    <div className="relative w-full bg-black px-6   py-24">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
         
@@ -90,15 +87,12 @@ export default function AboutSection() {
                 exploratory analysis, and performance tracking.
                 My background in full-stack development helps me understand
                 how data is generated, stored, and consumed in production systems.
+
+                
               </p>
 
              
-              <ul className="text-slate-400 text-sm space-y-2 mb-6">
-                <li>• Data Cleaning & EDA (Pandas, NumPy)</li>
-                <li>• SQL Queries, Joins & Aggregations</li>
-                <li>• Dashboards & Business Insights</li>
-                <li>• Backend-aware Analytics (APIs, Databases)</li>
-              </ul>
+             
 
               <p className="text-slate-500 text-sm italic">
                 I don’t just analyze data — I help turn it into decisions.
@@ -110,6 +104,6 @@ export default function AboutSection() {
         {/* RIGHT side ka TECH STACK */}
         <TechStack />
       </div>
-    </section>
+    </div>
   );
 }

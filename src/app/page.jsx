@@ -1,25 +1,23 @@
 "use client";
 
-import { useRef } from "react";
 import HeroSection from "@/components/hero/HeroSection";
 import AboutSection from "@/components/About/AboutSection";
+import Projectpage from "@/app/project/page";
 
 export default function Home() {
-  const scrollRef = useRef(null);
-
   return (
     <>
-
-      <main
-        ref={scrollRef}
-        className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth"
-      >
+      <main className="snap-y snap-proximity scroll-smooth">
         <section id="hero" className="h-screen snap-start">
           <HeroSection />
         </section>
 
-        <section id="about" className="h-screen snap-start">
+        <section id="about" className="min-h-screen snap-start">
           <AboutSection />
+        </section>
+
+        <section id="projects" className="snap-start">
+          <Projectpage />
         </section>
       </main>
     </>
