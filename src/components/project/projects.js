@@ -29,6 +29,7 @@ const projects = [
     github: "#",
     live: "#",
   },
+  
 ];
 
 export default projects

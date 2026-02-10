@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Major_Mono_Display, Zen_Dots, Acme } from "next/font/google";
 import Navbar from "@/components/hero/Navbar";
+import Footer from "@/components/hero/Footer";
 
 
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
       <body className="bg-black text-white">
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );
