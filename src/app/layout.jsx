@@ -1,9 +1,12 @@
+"use client";
+
 import "./globals.css";
 import { Major_Mono_Display, Zen_Dots, Acme } from "next/font/google";
+import { useEffect, useState } from "react";
+import PageReveal from "@/components/PageReveal";
 import Navbar from "@/components/hero/Navbar";
 import Footer from "@/components/hero/Footer";
-
-
+import Loader from "@/components/Loader";
 
 const mono = Major_Mono_Display({
   subsets: ["latin"],
@@ -24,13 +27,32 @@ const arc = Acme({
 });
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en" className={`${mono.variable} ${zen.variable} ${arc.variable}`}>
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1800); // loader duration (1.8s)
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <html
+      lang="en"
+      className={`${mono.variable} ${zen.variable} ${arc.variable}`}
+    >
       <body className="bg-black text-white">
-        <Navbar />
-        {children}
-        <Footer/>
+        {loading && <Loader />}
+
+        {!loading && (
+        <PageReveal>
+          <Navbar />
+            {children}
+          <Footer />
+        </PageReveal>
+        )}
+
       </body>
     </html>
   );
